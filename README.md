@@ -1,5 +1,3 @@
-ruby-shutterstock-api
-
 ## Description
 
 This client provides an easy way to interact with the [Shutterstock, Inc. API](http://api.shutterstock.com) which gives you access to millions of photos, illustrations and footage clips. You will need an API username and key from Shutterstock with the appropriate permissions in order to use this client.
@@ -12,7 +10,7 @@ The Shutterstock API client can be installed as follows - .
 
 ```sh
 git clone "git@github.com:shutterstock/ruby-shutterstock-api.git"
-cd shutterstock-ruby-api-client
+cd ruby-shutterstock-api
 gem build shutterstock-client.gemspec
 gem install shutterstock-client-0.0.1.gem
 ```
