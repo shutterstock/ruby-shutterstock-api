@@ -49,7 +49,7 @@ customer.account_id
 # Lightbox
 
 ```ruby
-lightbox = ShutterstockAPI::Lightbox.find(21722255)                  # get a lightbox object
+lightbox = ShutterstockAPI::Lightbox.find(id: 21722255)                  # get a lightbox object
 lightbox.images                                     # array of images
 
 # metadata
@@ -123,3 +123,10 @@ You can invoke it via `rake rubocop` or run `rubocop --help` for more options.
 
 
 [1]: https://github.com/styleguide/ruby
+
+# Supported Ruby Versions
+
+This library aims to support and is tested against the following Ruby
+versions:
+
+* Ruby 1.9.3
