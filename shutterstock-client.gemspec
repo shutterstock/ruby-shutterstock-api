@@ -5,7 +5,7 @@ require 'client/version'
 Gem::Specification.new do |s|
   s.name        = 'shutterstock-client'
   s.version     = ShutterstockAPI::VERSION
-  s.date        = '2014-2-21'
+  s.date        = '2014-02-21'
   s.summary     = 'A ruby client to work with shutterstock api'
   s.description = "see summary"
   s.authors     = ['jhogue, vkajjam, flindiakos, wusher, alicht']
