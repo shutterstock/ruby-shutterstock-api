@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://<SSTK_API_USERNAME>:<SSTK_API_KEY>@api.shutterstock.com/auth/customer.json
+    body:
+      encoding: US-ASCII
+      string: username=<SSTK_USERNAME>&password=<SSTK_PASSWORD>
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 20 Feb 2014 04:48:33 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - apissid=5c1bdeb5764a17033c5233fb3f4acb38; domain=.shutterstock.com; path=/;
+        expires=Sat, 22-Mar-2014 04:48:33 GMT
+      X-Shutterstock-Data:
+      - IyMjAAAjI15eRU5EXl4=
+      X-Shutterstock-Remote-User:
+      - <SSTK_API_USERNAME>
+    body:
+      encoding: US-ASCII
+      string: ! '{"language":"en","auth_token":"7729f58f73995e64fdc42990ef2c379866408f24","username":"<SSTK_USERNAME>"}'
+    http_version: 
+  recorded_at: Thu, 20 Feb 2014 04:48:33 GMT
+- request:
+    method: get
+    uri: http://<SSTK_API_USERNAME>:<SSTK_API_KEY>@api.shutterstock.com/lightboxes/21722255/extended.json?auth_token=7729f58f73995e64fdc42990ef2c379866408f24
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 20 Feb 2014 04:48:33 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - apissid=4a7fce92ab76e28761abdac09f25f0e7; domain=.shutterstock.com; path=/;
+        expires=Sat, 22-Mar-2014 04:48:33 GMT
+      X-Shutterstock-Data:
+      - IyMjAAAjI15eRU5EXl4=
+      X-Shutterstock-Remote-User:
+      - <SSTK_API_USERNAME>
+    body:
+      encoding: US-ASCII
+      string: ! '{"images":[{"image_id":"134243666","resource_url":"http://api.shutterstock.com/images/134243666","sizes":{"small":{"width":"416","height":"500","display_name":"Small"},"preview":{"url":"http://thumb9.shutterstock.com/photos/display_pic_with_logo/917573/134243666.jpg"},"medium":{"width":"832","height":"1000","display_name":"Medium"},"thumb_large":{"width":"125","url":"http://thumb9.shutterstock.com/photos/thumb_large/917573/134243666.jpg","height":"150"},"thumb_small":{"width":"83","url":"http://thumb9.shutterstock.com/photos/thumb_small/917573/134243666.jpg","img":"http://thumb9.shutterstock.com/photos/thumb_small/917573/134243666.jpg","height":"100"},"huge":{"width":"2662","height":"3200","display_name":"Large"}}},{"image_id":"71495566","resource_url":"http://api.shutterstock.com/images/71495566","sizes":{"small":{"width":"360","file_size_kb":"224","height":"500","display_name":"Small"},"preview":{"url":"http://thumb9.shutterstock.com/photos/display_pic_with_logo/419473/419473,1298130049,6.jpg"},"supersize":{"file_size_kb":"138914"},"medium":{"width":"720","file_size_kb":"920","height":"1000","display_name":"Medium"},"thumb_large":{"width":"108","url":"http://thumb9.shutterstock.com/photos/thumb_large/419473/419473,1298130049,6.jpg","height":"150"},"thumb_small":{"width":"72","url":"http://thumb9.shutterstock.com/photos/thumb_small/419473/419473,1298130049,6.jpg","img":"http://thumb9.shutterstock.com/photos/thumb_small/419473/419473,1298130049,6.jpg","height":"100"},"huge":{"width":"4175","file_size_kb":"25765","height":"5801","display_name":"Large"}}}],"confirmed":"1","resource_url":"http://api.shutterstock.com/lightboxes/21722255","image_count":2,"lightbox_id":"21722255","lightbox_name":"nunber343"}'
+    http_version: 
+  recorded_at: Thu, 20 Feb 2014 04:48:33 GMT
+recorded_with: VCR 2.8.0

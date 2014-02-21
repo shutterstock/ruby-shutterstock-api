@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://<SSTK_API_USERNAME>:<SSTK_API_KEY>@api.shutterstock.com/auth/customer.json
+    body:
+      encoding: US-ASCII
+      string: username=<SSTK_USERNAME>&password=<SSTK_PASSWORD>
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 20 Feb 2014 04:48:18 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - apissid=7ab5d0a842699c96157f135d935721ff; domain=.shutterstock.com; path=/;
+        expires=Sat, 22-Mar-2014 04:48:18 GMT
+      X-Shutterstock-Data:
+      - IyMjAAAjI15eRU5EXl4=
+      X-Shutterstock-Remote-User:
+      - <SSTK_API_USERNAME>
+    body:
+      encoding: US-ASCII
+      string: ! '{"language":"en","auth_token":"5ff1f722b4d4194087abfe4bde3b3c53a43c9a94","username":"<SSTK_USERNAME>"}'
+    http_version: 
+  recorded_at: Thu, 20 Feb 2014 04:48:18 GMT
+- request:
+    method: get
+    uri: http://<SSTK_API_USERNAME>:<SSTK_API_KEY>@api.shutterstock.com/customers/<SSTK_USERNAME>.json?auth_token=5ff1f722b4d4194087abfe4bde3b3c53a43c9a94
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 20 Feb 2014 04:48:18 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - apissid=aad004d3fafe18554d58d8cf2dafa487; domain=.shutterstock.com; path=/;
+        expires=Sat, 22-Mar-2014 04:48:18 GMT
+      X-Shutterstock-Data:
+      - IyMjAAAjI15eRU5EXl4=
+      X-Shutterstock-Remote-User:
+      - <SSTK_API_USERNAME>
+    body:
+      encoding: US-ASCII
+      string: ! '{"sales_rep_info":{},"account_id":"2272312"}'
+    http_version: 
+  recorded_at: Thu, 20 Feb 2014 04:48:18 GMT
+recorded_with: VCR 2.8.0

@@ -1,0 +1,108 @@
+PATH
+  remote: .
+  specs:
+    shutterstock-client (0.0.1)
+      activesupport
+      httparty
+      rspec
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (4.0.2)
+      i18n (~> 0.6, >= 0.6.4)
+      minitest (~> 4.2)
+      multi_json (~> 1.3)
+      thread_safe (~> 0.1)
+      tzinfo (~> 0.3.37)
+    addressable (2.3.5)
+    ast (1.1.0)
+    atomic (1.1.14)
+    celluloid (0.15.2)
+      timers (~> 1.1.0)
+    celluloid-io (0.15.0)
+      celluloid (>= 0.15.0)
+      nio4r (>= 0.5.0)
+    coderay (1.1.0)
+    crack (0.4.1)
+      safe_yaml (~> 0.9.0)
+    diff-lcs (1.2.5)
+    ffi (1.9.3)
+    formatador (0.2.4)
+    guard (2.4.0)
+      formatador (>= 0.2.4)
+      listen (~> 2.1)
+      lumberjack (~> 1.0)
+      pry (>= 0.9.12)
+      thor (>= 0.18.1)
+    guard-rspec (4.2.6)
+      guard (~> 2.1)
+      rspec (>= 2.14, < 4.0)
+    httparty (0.12.0)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
+    i18n (0.6.9)
+    json (1.8.1)
+    listen (2.5.0)
+      celluloid (>= 0.15.2)
+      celluloid-io (>= 0.15.0)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+    lumberjack (1.0.4)
+    method_source (0.8.2)
+    minitest (4.7.5)
+    multi_json (1.8.4)
+    multi_xml (0.5.5)
+    nio4r (1.0.0)
+    parser (2.1.4)
+      ast (~> 1.1)
+      slop (~> 3.4, >= 3.4.5)
+    powerpack (0.0.9)
+    pry (0.9.12.3)
+      coderay (~> 1.0)
+      method_source (~> 0.8)
+      slop (~> 3.4)
+    rainbow (2.0.0)
+    rake (10.1.1)
+    rb-fsevent (0.9.4)
+    rb-inotify (0.9.3)
+      ffi (>= 0.5.0)
+    rb-readline (0.5.1)
+    rspec (2.14.1)
+      rspec-core (~> 2.14.0)
+      rspec-expectations (~> 2.14.0)
+      rspec-mocks (~> 2.14.0)
+    rspec-core (2.14.7)
+    rspec-expectations (2.14.4)
+      diff-lcs (>= 1.1.3, < 2.0)
+    rspec-mocks (2.14.4)
+    rubocop (0.18.1)
+      json (>= 1.7.7, < 2)
+      parser (~> 2.1.3)
+      powerpack (~> 0.0.6)
+      rainbow (>= 1.99.1, < 3.0)
+    safe_yaml (0.9.7)
+    slop (3.4.7)
+    thor (0.18.1)
+    thread_safe (0.1.3)
+      atomic
+    timers (1.1.0)
+    tzinfo (0.3.38)
+    vcr (2.8.0)
+    webmock (1.17.1)
+      addressable (>= 2.2.7)
+      crack (>= 0.3.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  guard
+  guard-rspec
+  pry
+  rake
+  rb-readline
+  rubocop
+  shutterstock-client!
+  vcr
+  webmock

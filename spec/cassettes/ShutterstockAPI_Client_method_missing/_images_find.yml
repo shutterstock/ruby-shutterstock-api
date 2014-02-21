@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://<SSTK_API_USERNAME>:<SSTK_API_KEY>@api.shutterstock.com/auth/customer.json
+    body:
+      encoding: US-ASCII
+      string: username=<SSTK_USERNAME>&password=<SSTK_PASSWORD>
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 20 Feb 2014 04:48:35 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - apissid=14ba9df872d4659ae9626c1d3de5d661; domain=.shutterstock.com; path=/;
+        expires=Sat, 22-Mar-2014 04:48:35 GMT
+      X-Shutterstock-Data:
+      - IyMjAAAjI15eRU5EXl4=
+      X-Shutterstock-Remote-User:
+      - <SSTK_API_USERNAME>
+    body:
+      encoding: US-ASCII
+      string: ! '{"language":"en","auth_token":"2c9f254c160d7898b9a5718691df511b69361c57","username":"<SSTK_USERNAME>"}'
+    http_version: 
+  recorded_at: Thu, 20 Feb 2014 04:48:35 GMT
+- request:
+    method: get
+    uri: http://<SSTK_API_USERNAME>:<SSTK_API_KEY>@api.shutterstock.com/images/118139110.json?auth_token=2c9f254c160d7898b9a5718691df511b69361c57
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 20 Feb 2014 04:48:35 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - apissid=b56ba249a4659e062f56ed0d0c9a2175; domain=.shutterstock.com; path=/;
+        expires=Sat, 22-Mar-2014 04:48:35 GMT
+      X-Shutterstock-Data:
+      - IyMjAAAjI15eRU5EXl4=
+      X-Shutterstock-Remote-User:
+      - <SSTK_API_USERNAME>
+    body:
+      encoding: US-ASCII
+      string: ! '{"illustration":0,"r_rated":"0","photo_id":"118139110","enhanced_license_available":"1","resource_url":"http://api.shutterstock.com/images/118139110","categories":[{"category_id":"1","category":"Animals/Wildlife"},{"category_id":"20","category":"NOT-CATEGORIZED"}],"model_release":{"translation_id":"N_A","code":"0"},"vector_type":null,"description":"Adorable
+        Labrador Puppy Playing with a Chew Toy on White Backdrop","sizes":{"small":{"width":"500","file_size_kb":"86","height":"334","display_name":"Small"},"preview":{"url":"http://thumb1.shutterstock.com/photos/display_pic_with_logo/1306729/118139110.jpg"},"supersize":{"file_size_kb":"9876"},"medium":{"width":"1000","file_size_kb":"294","height":"667","display_name":"Medium"},"thumb_large":{"width":"150","url":"http://thumb1.shutterstock.com/photos/thumb_large/1306729/118139110.jpg","height":"100"},"thumb_small":{"width":"100","url":"http://thumb1.shutterstock.com/photos/thumb_small/1306729/118139110.jpg","img":"http://thumb1.shutterstock.com/photos/thumb_small/1306729/118139110.jpg","height":"67"},"huge":{"width":"4635","file_size_kb":"2725","height":"3090","display_name":"Large"}},"keywords":["animal","animal
+        themes","backgrounds","cute","dog","domestic animals","friendship","full length","isolated","labrador","labrador
+        retriever","one animal","pets","play","puppy","purebred dog","studio shot","toy","yellow","young
+        animal"],"is_vector":0,"web_url":"http://www.shutterstock.com/pic.mhtml?id=118139110","submitter_id":"1306729","submitter":"Claire
+        McAdams"}'
+    http_version: 
+  recorded_at: Thu, 20 Feb 2014 04:48:35 GMT
+recorded_with: VCR 2.8.0

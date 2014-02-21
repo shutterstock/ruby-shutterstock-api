@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://<SSTK_API_USERNAME>:<SSTK_API_KEY>@api.shutterstock.com/auth/customer.json
+    body:
+      encoding: US-ASCII
+      string: username=<SSTK_USERNAME>&password=<SSTK_PASSWORD>
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 20 Feb 2014 04:48:34 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - apissid=560533a01a20a0f05720a69d0e470f53; domain=.shutterstock.com; path=/;
+        expires=Sat, 22-Mar-2014 04:48:34 GMT
+      X-Shutterstock-Data:
+      - IyMjAAAjI15eRU5EXl4=
+      X-Shutterstock-Remote-User:
+      - <SSTK_API_USERNAME>
+    body:
+      encoding: US-ASCII
+      string: ! '{"language":"en","auth_token":"3f3bacd4650bd7ec4fa77d89dc28d4367309540c","username":"<SSTK_USERNAME>"}'
+    http_version: 
+  recorded_at: Thu, 20 Feb 2014 04:48:34 GMT
+- request:
+    method: get
+    uri: http://<SSTK_API_USERNAME>:<SSTK_API_KEY>@api.shutterstock.com/customers/testuser.json?auth_token=3f3bacd4650bd7ec4fa77d89dc28d4367309540c
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 20 Feb 2014 04:48:34 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - apissid=aade0cd74ca58a8a68f1fd2308dd1e88; domain=.shutterstock.com; path=/;
+        expires=Sat, 22-Mar-2014 04:48:34 GMT
+      X-Shutterstock-Data:
+      - IyMjAAAjI15eRU5EXl4=
+      X-Shutterstock-Remote-User:
+      - <SSTK_API_USERNAME>
+    body:
+      encoding: US-ASCII
+      string: Not authorized to see information for customer 'testuser'
+    http_version: 
+  recorded_at: Thu, 20 Feb 2014 04:48:34 GMT
+recorded_with: VCR 2.8.0
