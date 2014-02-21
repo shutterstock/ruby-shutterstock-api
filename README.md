@@ -1,5 +1,4 @@
 ruby-shutterstock-api
-============================
 
 ## Description
 
