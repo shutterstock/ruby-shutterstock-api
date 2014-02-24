@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/shutterstock/ruby-shutterstock-api.png?branch=master)](https://travis-ci.org/shutterstock/ruby-shutterstock-api)
+
 ## Description
 
 This client provides an easy way to interact with the [Shutterstock, Inc. API](http://api.shutterstock.com) which gives you access to millions of photos, illustrations and footage clips. You will need an API username and key from Shutterstock with the appropriate permissions in order to use this client.
@@ -130,3 +132,6 @@ This library aims to support and is tested against the following Ruby
 versions:
 
 * Ruby 1.9.3
+* Ruby 2.0.0
+* Ruby 2.1.0
+* JRuby 1.7.9 in Ruby 1.9 mode
