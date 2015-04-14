@@ -10,13 +10,17 @@ Gem::Specification.new do |s|
   s.description = "see summary"
   s.authors     = ['jhogue, vkajjam, flindiakos, wusher, alicht']
   s.email       = 'vkajjam@shutterstock.com'
-  s.files       = ['lib/shutterstock-client.rb']
-  s.require_paths = ["lib"]
+
+  s.files        = Dir[
+    'README.md', 'LICENSE', 'Rakefile', 'lib/**/*'
+  ]
+  s.test_files   = Dir['spec/**/*']
+
   s.homepage    = 'https://github.com/shutterstock/ruby-shutterstock-api' 
   s.license     = 'Copyright shutterstock.com 2014'
-  s.add_dependency "rspec"
   s.add_dependency "httparty"
   s.add_dependency "activesupport"
+  s.add_dependency "rspec"
   s.add_development_dependency "pry"
   s.add_development_dependency "vcr"
   s.add_development_dependency "webmock"

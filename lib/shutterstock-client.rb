@@ -3,12 +3,12 @@ require 'active_support/all'
 require 'singleton'
 
 module ShutterstockAPI
-  require_relative './client/driver'
-  require_relative './client/configuration'
-  require_relative './client/customer'
-  require_relative './client/images'
-  require_relative './client/image'
-  require_relative './client/lightbox'
+  require 'client/driver'
+  require 'client/configuration'
+  require 'client/customer'
+  require 'client/images'
+  require 'client/image'
+  require 'client/lightbox'
 
 	class Client
 		include HTTParty
