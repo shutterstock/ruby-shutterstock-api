@@ -136,3 +136,7 @@ versions:
 * Ruby 2.0.0
 * Ruby 2.1.0
 * JRuby 1.7.9 in Ruby 1.9 mode
+
+## License
+
+[MIT](LICENSE) © 2014-2017 Shutterstock Images, LLC

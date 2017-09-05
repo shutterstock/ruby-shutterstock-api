@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.files       = ['lib/shutterstock-client.rb']
   s.require_paths = ["lib"]
   s.homepage    = 'https://github.com/shutterstock/ruby-shutterstock-api' 
-  s.license     = 'Copyright shutterstock.com 2014'
+  s.license     = 'MIT'
   s.add_dependency "rspec"
   s.add_dependency "httparty"
   s.add_dependency "activesupport"
