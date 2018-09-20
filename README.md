@@ -1,3 +1,7 @@
+# DEPRECATED
+
+This repo is no longer publicly supported.
+
 [![Build Status](https://travis-ci.org/shutterstock/ruby-shutterstock-api.png?branch=master)](https://travis-ci.org/shutterstock/ruby-shutterstock-api)
 [![Code Climate](https://codeclimate.com/github/shutterstock/ruby-shutterstock-api.png)](https://codeclimate.com/github/shutterstock/ruby-shutterstock-api)
 
